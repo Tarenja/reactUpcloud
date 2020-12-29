@@ -28,6 +28,7 @@ async function request(
       password: UPCLOUD_PASSWORD,
     },
     url: `${API_URL}${config.url || ''}`,
+    header: { 'X-Requested-With': 'XMLHttpRequest' },
   };
 
   const response: AxiosResponse = await getAxios().request(requestConfig);

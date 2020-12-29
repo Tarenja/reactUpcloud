@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import { getServers } from 'api/server';
 
 let serverList: Array<{}>;
@@ -22,9 +21,6 @@ serverRequest()
 
 const Servers = () => (
   <>
-    <Head>
-      <title>UpCloud Server List</title>
-    </Head>
     <main>
       <ul>
         {serverList &&
