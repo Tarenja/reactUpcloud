@@ -15,6 +15,7 @@ const cardStyles = css`
     background-color: color(white);
     border: 1px solid color(grey, card-border);
     box-sizing: border-box;
+    margin: 1rem auto;
   }
 `;
 
@@ -43,6 +44,7 @@ const cardContentStyles = css`
 
 const cardHeadStyles = css`
   @import 'color';
+  @import 'rem';
 
   .Card__Head {
     align-items: center;
