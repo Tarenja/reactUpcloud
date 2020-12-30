@@ -4,7 +4,6 @@ import { GetServerSideProps } from "next";
 import Head from 'next/head';
 import Card from 'components/Card/Card';
 import CardHead from 'components/Card/CardHead';
-import CardContent from 'components/Card/CardContent';
 import css from 'styled-jsx/css';
 
 const Servers = ({ servers }) => (
@@ -87,9 +86,6 @@ const Servers = ({ servers }) => (
 export async function getServerSideProps(context) {
   const request = await getServers();
   const servers = request.data;
-  servers.map((server) => {
-    console.log(server.created)
-  })
   return {
     props: { servers }
   }

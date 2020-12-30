@@ -34,7 +34,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/servers.js"  ],
+, "pages/servers.js", "pages/storages.js"  ],
   "exclude": [
     "node_modules"
   ]
