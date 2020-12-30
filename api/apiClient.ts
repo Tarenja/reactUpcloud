@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig, AxiosInstance, AxiosResponse } from 'axios';
 
 // insert your UpCloud username & password here!
 const UPCLOUD_USERNAME = 'task_johanna';
-const UPCLOUD_PASSWORD = 'V9msRMfsKs34du9_nufsJHdd ';
+const UPCLOUD_PASSWORD = 'V9msRMfsKs34du9_nufsJHdd';
 
 // use CORS proxy, so we don't get CORS errors such as "No 'Access-Control-Allow-Origin' header is present"
 const API_URL =
@@ -28,7 +28,7 @@ async function request(
       password: UPCLOUD_PASSWORD,
     },
     url: `${API_URL}${config.url || ''}`,
-    header: { 'X-Requested-With': 'XMLHttpRequest' },
+    headers: { 'X-Requested-With': 'XMLHttpRequest' },
   };
 
   const response: AxiosResponse = await getAxios().request(requestConfig);
